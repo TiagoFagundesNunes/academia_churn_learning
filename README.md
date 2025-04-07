@@ -107,3 +107,9 @@ Dias ativos totais
 ✔ Workers operando via RabbitMQ
 ✔ Modelos treináveis via Jupyter
 ✔ Sistema completo pronto para produção/testes
+
+## 📄 Documentação da API
+
+A documentação completa da API está disponível automaticamente via Swagger:
+
+- Acesse: [http://localhost:8000/docs](http://localhost:8000/docs)
