@@ -107,3 +107,38 @@ Dias ativos totais
 ✔ Workers operando via RabbitMQ
 ✔ Modelos treináveis via Jupyter
 ✔ Sistema completo pronto para produção/testes
+
+
+## 📄 Documentação da API
+
+A documentação completa da API está disponível automaticamente via Swagger:
+
+- Acesse: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+## ⚙️ Inicialização do Projeto
+
+Com Docker:
+
+docker-compose up --build
+
+## ⚙️ Scripts úteis
+Inicializar o banco manualmente (se necessário)
+
+docker exec -it academia-db psql -U postgres -d academia
+Rodar os workers localmente (sem Docker)
+bash
+Copiar
+Editar
+# Worker de check-in
+python -m app.workers.checkin_worker
+
+# Worker de relatório
+python -m app.workers.report_worker
+
+# Worker de churn
+python -m app.workers.churn_updater
+
+## 🧪 Testes
+A aplicação suporta testes automatizados com Pytest. Para rodar:
+
+pytest
