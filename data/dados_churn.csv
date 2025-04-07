@@ -1,0 +1,3 @@
+aluno_id,frequencia_semanal,dias_desde_ultimo_checkin,duracao_media_visitas,tipo_plano,frequencia_mensal,dias_restantes,duracao_plano,frequentador_constante,genero,idade,dias_ativos,churn
+2,0.24,0,300.0,Premium,12,236,12,1,M,39,44,0
+3,1.0,4,300.0,Silver,17,22,1,1,M,42,67,0

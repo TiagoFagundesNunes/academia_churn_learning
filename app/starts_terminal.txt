@@ -1,0 +1,22 @@
+Swagger
+venv\Scripts\activate
+uvicorn app.main:app --reload
+
+worker_checkins em massa
+venv\Scripts\activate
+python -m app.workers.checkin_worker
+
+worker e relatorios
+venv\Scripts\activate
+python -m app.workers.report_worker
+
+worker e atualização do churn
+venv\Scripts\activate
+pip install pandas  # Só se ainda não tiver instalado
+python -m app.workers.churn_updater
+
+para criar um start automatico, troque os txt por .bat e troque as informações da area de trabalho, apos isso so clicar duas vezes e ele iniciará todos os terminais!
+
+#DOCKER
+docker-compose down
+docker-compose up --build
