@@ -29,7 +29,7 @@ Este projeto é uma API completa para gerenciamento de alunos de uma academia, c
 ##  Instalação e Execução
 
 ### 1. Clone o repositório
-git clone https://github.com/seu-usuario/academia-churn.git
+git clone https://github.com/fagundestiago/academia-churn.git
 cd academia-churn
 2. Crie e ative o ambiente virtual
 python -m venv venv
